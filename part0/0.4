@@ -1,0 +1,17 @@
+sequenceDiagram
+    browser->>+server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
+    Activate server
+    server->>+browser: HTML Document
+    Deactivate server
+    browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+    Activate server
+    server->>+browser: The CSS file
+    Deactivate server
+    browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/main.js
+    Activate server
+    server->>+browser: The JavaScript file
+    Deactivate server
+    browser->>+server: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+    Activate server
+    server->>+browser: {content: "hi", date: "2025-09-20T07:42:26.866Z"}
+    Deactivate server
